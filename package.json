@@ -28,9 +28,9 @@
     "build": "rollup -c",
     "clean": "git clean -fdX .",
     "lint": "eslint modules",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm build",
     "test": "karma start --single-run",
-    "prepare": "npm run build"
+    "prepare": "rollup -c"
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
